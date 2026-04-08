@@ -1,0 +1,30 @@
+# Phase 1: Python Prototype
+# Core
+torch>=2.2.0
+transformers>=4.40.0
+accelerate>=0.30.0
+
+# FP4 / Low-precision — REAL quantization via torchao (NOT simulation)
+torchao>=0.5.0        # Meta开源：真实 FP4/INT4/FP6 量化
+
+# Quantization utils
+torchao                  # Real FP4 quantization (not noise simulation)
+
+# KV Cache & Memory
+faiss-cpu>=1.8.0      # Optional: vector-based importance scoring
+psutil>=5.9.0          # Memory monitoring
+
+# Evaluation
+datasets>=2.18.0       # For Needle-in-a-Haystack and benchmarks
+scipy>=1.13.0          # For PPL calculation
+
+# Utilities
+tqdm>=4.66.0
+numpy>=1.26.0
+pandas>=2.2.0
+pyarrow>=15.0.0
+
+# Dev / Test
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-benchmark>=4.0.0

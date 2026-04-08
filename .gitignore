@@ -3,74 +3,98 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Build & packaging
-dist/
+# Build artifacts
 build/
 build_bench/
 build_nanocache/
+build_dl/
+build_dl_nc/
+build_nc512/
+build_no_nc/
+build_rel/
+build_rel_nc/
+build_timing/
 *.egg-info/
+*.exe
+*.obj
+*.o
+*.lib
+*.dll
+*.exp
+*.pdb
+*.ilk
+*.ipdb
+*.iobj
+*.tlog
+*.log
+*.recipe
+*.VC.db
+*.cmake
+*.cmake.*
+
+# Test and results
+test_alloc/
+results/
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+CMakeLists.txt
+TestAlloc.sln
+ALL_BUILD.vcxproj
+ALL_BUILD.vcxproj.filters
+ZERO_CHECK.vcxproj
+ZERO_CHECK.vcxproj.filters
+test_alloc.vcxproj
+test_alloc.vcxproj.filters
+test_min.vcxproj
+test_min.vcxproj.filters
+x64/
+Release/
+Debug/
 
 # Virtual environments
 venv/
 .venv/
 env/
 
-# PyTorch & CUDA
+# Model files
+*.safetensors
+*.gguf
+*.ggml
 *.pt
 *.pth
 *.ckpt
 *.bin
 
-# Model files
-*.safetensors
-*.gguf
-*.ggml
+# llama.cpp submodule (fetch separately)
+llama.cpp/
 
-# Logs & outputs
-*.log
-logs/
-*.txt
+# Root-level log and output files (specific patterns)
 err.txt
 out.txt
-test_out.txt
-test_err.txt
-stderr.txt
-stdout.txt
+out_c_*.txt
+out_nc_*.txt
 nc_output.txt
-callback_out.txt
 callback_err.txt
-needle_test.txt
+callback_out.txt
 needle_err.txt
-profile_out.txt
-profile_err.txt
-profile_err3.txt
-profile_err4.txt
-profile_err5.txt
-profile_out3.txt
-profile_out4.txt
-profile_out5.txt
-build_err.txt
-build_err2.txt
-build_err3.txt
-build_err4.txt
-build_out.txt
-build_out2.txt
-build_out3.txt
-build_out4.txt
+needle_test.txt
+profile_err*.txt
+profile_out*.txt
+build_err*.txt
+build_out*.txt
 build_log.txt
+compile*.txt
 bench_errors.txt
 bench2_errors.txt
 compile_errors.txt
-compile2.txt
-compile3.txt
-compile_err.txt
-
-# Build & test artifacts
-test_alloc/
-results/
-
-# llama.cpp submodule
-llama.cpp/
+vram_*.log
+vram_*_err.log
+stderr.txt
+stdout.txt
+test_out.txt
+test_err.txt
+test_output.txt
 
 # IDE & OS
 .idea/
@@ -88,5 +112,5 @@ Thumbs.db
 # Jupyter
 .ipynb_checkpoints/
 
-# Build executables
-*.exe
+# Backup directory
+eval-callback-backup/
