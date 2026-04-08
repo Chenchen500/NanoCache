@@ -1,0 +1,92 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build & packaging
+dist/
+build/
+build_bench/
+build_nanocache/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# PyTorch & CUDA
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Model files
+*.safetensors
+*.gguf
+*.ggml
+
+# Logs & outputs
+*.log
+logs/
+*.txt
+err.txt
+out.txt
+test_out.txt
+test_err.txt
+stderr.txt
+stdout.txt
+nc_output.txt
+callback_out.txt
+callback_err.txt
+needle_test.txt
+needle_err.txt
+profile_out.txt
+profile_err.txt
+profile_err3.txt
+profile_err4.txt
+profile_err5.txt
+profile_out3.txt
+profile_out4.txt
+profile_out5.txt
+build_err.txt
+build_err2.txt
+build_err3.txt
+build_err4.txt
+build_out.txt
+build_out2.txt
+build_out3.txt
+build_out4.txt
+build_log.txt
+bench_errors.txt
+bench2_errors.txt
+compile_errors.txt
+compile2.txt
+compile3.txt
+compile_err.txt
+
+# Build & test artifacts
+test_alloc/
+results/
+
+# llama.cpp submodule
+llama.cpp/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build executables
+*.exe
