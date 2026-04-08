@@ -1,5 +1,7 @@
 # NanoCache
 
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
+
 **KV Cache Layered Compression -- Extend LLM Context Length Under Limited VRAM**
 
 > **NanoCache 1.0** provides a layered architecture: Sparse Attention (L1) + INT8 Quantization (L2) + Smart LRU RAM Offload (L3), extending llama.cpp inference context length without noticeable latency overhead.
